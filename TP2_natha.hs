@@ -58,7 +58,7 @@ todos los factores de la lista a generar deberá ser igual a n. Reutilizar las f
 -}
 
 listaFactoresPrimosDe :: Int -> [Int]
-listaFactoresPrimosDe n = [x | x <- listaPrimosMenoresOIgualesQue n, esDivisible(n, x)]
+listaFactoresPrimosDe n = [x | x <- listaPrimosMenorIgualA n, esDivisible(n, x)]
 
 primerFactorPrimoDe :: Int -> Int
 primerFactorPrimoDe n = head(listaFactoresPrimosDe n)
