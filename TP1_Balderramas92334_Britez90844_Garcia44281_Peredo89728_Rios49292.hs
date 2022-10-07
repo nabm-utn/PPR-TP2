@@ -46,7 +46,7 @@ generar una lista con todos los factores primos del número n. Es decir, en este
 todos los factores de la lista a generar deberá ser igual a n. Reutilizar las funciones necesarias.
 ----5---}
 listaFactoresPrimosDe :: Int -> [Int]
-listaFactoresPrimosDe n = [x | x <- listaPrimosMenoresOIgualesQue n, esDivisible(n, x)]
+listaFactoresPrimosDe n = [x | x <- listaPrimosMenoresOIgualesQue n, esDivisible n x]
 
 primerFactorPrimoDe :: Int -> Int
 primerFactorPrimoDe n = head(listaFactoresPrimosDe n)
